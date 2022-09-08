@@ -1,0 +1,25 @@
+import com.sun.deploy.security.SelectableSecurityManager;
+
+import java.util.*;
+public class pallindrome {
+    public static void main(String[] args) {
+        try {
+            int r, sum = 0, temp;
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter a N value:");
+            int n = sc.nextInt();
+            temp = n;
+            while (n > 0) {
+                r = n % 10;
+                sum = (sum * 10) + r;
+                n = n / 10;
+            }
+            if (temp == sum)
+                System.out.println("true");
+            else
+                System.out.println("false");
+        } catch (Exception e){
+            System.out.println("Something went wrong");
+        }
+    }
+}
