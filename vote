@@ -1,0 +1,19 @@
+import java.util.*;
+public class vote {
+    public static void main(String[] arg) {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Age=");
+            int age = sc.nextInt();
+            int x = 0;
+            if (age >= 18) {
+                System.out.println("Eligible forvote");
+            } else
+                x = 18 - age;
+            System.out.println("Not eligible");
+            System.out.println("Eligible after" +x);
+        } catch (Exception e) {
+            System.out.println("something wrong");
+        }
+    }
+}
