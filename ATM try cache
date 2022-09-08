@@ -1,0 +1,25 @@
+import java.util.*;
+public class Atm{
+    public static void  main(String[] args) {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter a 1st denominatioon:");
+            int a = sc.nextInt();
+            System.out.println("Enter the no.of notes:");
+            int a1 = sc.nextInt();
+            System.out.println("Enter the 2nd denomination:");
+            int b = sc.nextInt();
+            System.out.println("Enter no.of notes:");
+            int a2=sc.nextInt();
+            System.out.println("Enter the 3rd denomination:" );
+            int c=sc.nextInt();
+            System.out.println("Enter the no.of notes:");
+            int a3=sc.nextInt();
+            int z=a*a1+b*a2+c*a3;
+            System.out.println("Total amount in ATM:"+z);
+        }
+        catch (Exception e){
+            System.out.println("something is wrong");
+        }
+    }
+}
